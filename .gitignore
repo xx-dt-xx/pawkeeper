@@ -1,0 +1,80 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# If your build process includes running collectstatic, you probably don't want
+# to include your staticfiles directory
+staticfiles/
+static/
+*.static
+*.staging
+*.production
+
+# Media
+media/
+
+# Pipenv environment files
+Pipfile.lock
+
+# python-dotenv environment files
+.env
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+
+# pyenv
+.python-version
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# PostgreSQL
+*.pg_dump
+
