@@ -129,7 +129,7 @@ class Vaccines(models.Model):
     pet = models.ForeignKey(Pets, related_name='vaccines', on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     lab_name = models.CharField(max_length=100)
-    lot = models.IntegerField()
+    lot = models.CharField(max_length=100)
     expiration_date = models.DateField()
     application_date = models.DateField()
     next_due_date = models.DateField(null=True)
@@ -152,6 +152,7 @@ class Illnesses(models.Model):
 
 
 class Treatments(models.Model):
+    pet = models.ForeignKey(Pets, related_name='treatments', on_delete=models.CASCADE, null=True)
     illness = models.ForeignKey(Illnesses, related_name='treatments', on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=100)
     description = models.TextField()
